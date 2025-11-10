@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/portfolio/Sufal.jpg" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet" />
+  <!-- vender CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.2.0/swiper-bundle.min.css" />
+  <!-- font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <!-- local CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Sufal Basak - My Portfolio</title>
+
+  <!-- Custom CSS for Skill Section Highlight -->
+  <style>
+    .skill-category {
+      font-weight: 600;
+      color: #0d6efd;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .skill-box {
+      background: #f8f9fa;
+      border-left: 4px solid #0d6efd;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(13, 110, 253, 0.15);
+    }
+
+    .skill-box .progress {
+      height: 2.2rem;
+      background-color: #e9ecef;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .skill-box .progress-bar {
+      background: linear-gradient(90deg, #0d6efd, #0dcaf0);
+    }
+
+    .skill-box .skill {
+      font-weight: 500;
+      color: #212529;
+    }
+
+    .skill-box .val {
+      font-weight: 700;
+      color: #0d6efd;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ========== Start Mobile Nav Toggle Button ========== -->
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <!-- ========== End Mobile Nav Toggle Button ========== -->
+  <!-- ========== Start Section Header ========== -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img src="img/portfolio/Sufal.jpg" alt="" class="img-fluid rounded-circle" />
+        <h1 class="text-light">Sufal Basak</h1>
+        <div class="text-center mt-3">
+          <a href="https://x.com/Sufal_Basak_5" class="btn btn-outline-light btn-sm me-1" title="Twitter"><i
+              class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/sufal-basak-b95748260/" class="btn btn-outline-light btn-sm me-1"
+            title="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/SufalBasak" class="btn btn-outline-light btn-sm me-1" title="Github"><i
+              class="fa-brands fa-github"></i></a>
+          <a href="https://codepen.io/Sufal-Basak" class="btn btn-outline-light btn-sm me-1" title="Codepen"><i
+              class="fa-brands fa-codepen"></i></a>
+          <a href="" class="btn btn-outline-light btn-sm me-1" title="Youtube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <nav id="navbar" class="navbar nav-menu">
+        <ul>
+          <li>
+            <a href="#hero" class="nav-link scrollto active"><i class="fa-solid fa-house"></i> <span>Home</span></a>
+            <a href="#about" class="nav-link scrollto"><i class="fa-solid fa-user"></i> <span>About</span></a>
+            <a href="#resume" class="nav-link scrollto"><i class="fa-solid fa-folder"></i> <span>Resume</span></a>
+            <a href="#portfolio" class="nav-link scrollto"><i class="fa-solid fa-address-card"></i>
+              <span>Portfolio</span></a>
+            <a href="#services" class="nav-link scrollto"><i class="fa-solid fa-server"></i> <span>Services</span></a>
+            <a href="#contact" class="nav-link scrollto"><i class="fa-solid fa-envelope"></i> <span>Contact</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- ========== End Section Header ========== -->
+  <!-- ========== Start Section Hero ========== -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="Home.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Hero Content -->
+    <div class="hero-container text-center" data-aos="fade-in">
+      <h1>Sufal Basak</h1>
+      <p>I'm <span id="typed"></span></p>
+
+      <!-- Buttons -->
+      <div class="hero-buttons mt-4">
+        <a href="resume.pdf" class="btn-hire-me">Hire Me</a>
+        <a href="#contact" class="btn-connect-me">Connect Me</a>
+      </div>
+    </div>
+  </section>
+  <!-- ========== End Section Hero ========== -->
+  <!-- ========== Start Main Area ========== -->
+  <main id="main">
+    <!-- ========== Start Section About ========== -->
+    <section id="about" class="about py-2">
+      <div class="container">
+        <div class="section-title">
+          <h2>About</h2>
+          <p>
+            Passionate B.Tech (IT) undergraduate with a strong foundation in web development, problem-solving, and
+            modern technologies.
+          </p>
+        </div>
+        <div class="row py-3">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="img/portfolio/sufalBasak.jpg" class="img-fluid img-thumbnail" alt="" />
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Full Stack Developer & AI Enthusiast</h3>
+            <p class="fst-italic">
+              I am a dedicated B.Tech (Information Technology) undergraduate deeply passionate about building dynamic,
+              user-friendly web applications and solving real-world problems through code.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Birthday:</strong>
+                    <span>05 Oct 2005</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Website:</strong>
+                    <span>www.sufalbasak.in</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Phone:</strong>
+                    <span>+91 8100402929</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Location:</strong>
+                    <span>Shyamnagar, West Bengal</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Age:</strong>
+                    <span>20</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Degree:</strong>
+                    <span>B.Tech in Information Technology</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Email:</strong>
+                    <span>sufalbasak199@gmail.com</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Freelance:</strong>
+                    <span>Available</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              I thrive on turning ideas into functional, elegant solutions. With hands-on experience in full-stack web
+              development using <strong>HTML, CSS, JavaScript, React, Flask, FastAPI, and MySQL</strong>, I enjoy
+              crafting responsive UIs and scalable backends. My love for <strong>problem-solving</strong> drives me to
+              tackle complex challenges on platforms like LeetCode and HackerRank. Currently exploring
+              <strong>Generative AI</strong> and modern frameworks to build intelligent, next-gen applications.
+            </p>
+            <p>
+              I believe in clean code, continuous learning, and delivering value through technology. Always eager to
+              collaborate, innovate, and grow in the ever-evolving world of web and software development.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== End Section About ========== -->
+    <!-- ========== Start Section fact ========== -->
+    <!-- ========== Start Section fact ========== -->
+    <section id="fact" class="fact py-2">
+      <div class="container">
+        <div class="section-title">
+          <h2>Facts</h2>
+          <p>
+            Building real-world solutions with code — one project, one algorithm, one innovation at a time.
+          </p>
+        </div>
+        <div class="row g-0">
+          <div class="col-lg-3 col-md-6 d-md-flex align-content-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-code-slash text-primary"></i>
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1.5"
+                class="purecounter"></span>+
+              <p><strong>Projects Built</strong><br><small>Full-Stack Web Apps & Tools</small></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-md-flex align-content-md-stretch" data-aos="fade-up" data-delay="100">
+            <div class="count-box">
+              <i class="bi bi-trophy text-warning"></i>
+              <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1.5"
+                class="purecounter"></span>+
+              <p><strong>Problems Solved</strong><br><small>LeetCode, HackerRank, GeeksOFGeeks, CodeChef</small></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-md-flex align-content-md-stretch" data-aos="fade-up" data-delay="200">
+            <div class="count-box">
+              <i class="bi bi-clock-history text-success"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1200" data-purecounter-duration="1.5"
+                class="purecounter"></span>+
+              <p><strong>Hours Coded</strong><br><small>Self-Driven Learning & Development</small></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-md-flex align-content-md-stretch" data-aos="fade-up" data-delay="300">
+            <div class="count-box">
+              <i class="bi bi-git text-danger"></i>
+              <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1.5"
+                class="purecounter"></span>+
+              <p><strong>GitHub Commits</strong><br><small>Open Source & Personal Projects</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== End Section fact ========== -->
+    <!-- ========== End Section fact ========== -->
+
+    <!-- ========== Start Section Skills ========== -->
+    <section id="skill" class="skills py-2">
+      <div class="container">
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>
+            Proficient in full-stack web development, modern programming languages, databases, and generative AI
+            technologies.
+          </p>
+        </div>
+
+        <div class="row skill-content">
+
+          <!-- Left Column -->
+          <div class="col-lg-6" data-aos="fade-in">
+
+            <!-- Web Development - Frontend -->
+            <div class="skill-box">
+              <h5 class="skill-category">Web Development - Frontend</h5>
+              <div class="progress">
+                <span class="skill">HTML <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill">CSS <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Bootstrap <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">JavaScript <i class="val">60%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill">React.js <i class="val">85%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill">jQuery <i class="val">70%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Web Development - Backend -->
+            <div class="skill-box">
+              <h5 class="skill-category">Web Development - Backend</h5>
+              <div class="progress">
+                <span class="skill">Flask <i class="val">82%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill">FastAPI <i class="val">78%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill">SQL <i class="val">88%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-lg-6" data-aos="fade-in" data-delay="100">
+
+            <!-- Languages -->
+            <div class="skill-box">
+              <h5 class="skill-category">Languages</h5>
+              <div class="progress">
+                <span class="skill">Python (OOPs) <i class="val">85%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill">Java <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill">R Programming <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Database -->
+            <div class="skill-box">
+              <h5 class="skill-category">Database</h5>
+              <div class="progress">
+                <span class="skill">MySQL <i class="val">88%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Generative AI -->
+            <div class="skill-box">
+              <h5 class="skill-category">Generative AI</h5>
+              <div class="progress">
+                <span class="skill">Generative AI <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== End Section Skills ========== -->
+
+    <!-- ========== Start Section Resume ========== -->
+    <!-- ========== Start Section Resume ========== -->
+    <!-- ========== Start Section Resume ========== -->
+    <section id="resume" class="resume py-2">
+      <div class="container">
+        <div class="section-title">
+          <h2>Resume</h2>
+          <div class="d-flex justify-content-between flex-wrap">
+            <h4>Sufal Basak</h4>
+            <div class="d-flex align-items-center">
+              <a href="download/Sufal_Resume.pdf" target="_blank" class="btn btn-dark fs-6">
+                <i class="fa fa-download"></i> Download Resume
+              </a>
+            </div>
+          </div>
+          <address>
+            Athpur, West Bengal • +91 8100402929 • sufalbasak199@gmail.com
+          </address>
+
+          <h3 class="resume-title">Summary</h3>
+          <p>
+            <em>
+              B.Tech (Information Technology) student with hands-on internship experience in web development and
+              ed-tech. Passionate about building scalable web applications, solving complex problems, and mentoring
+              peers in coding and math.
+            </em>
+          </p>
+        </div>
+
+        <div class="row">
+
+          <!-- Education -->
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Education</h3>
+
+            <!-- B.Tech IT -->
+            <div class="resume-items">
+              <h4>B.Tech in Information Technology</h4>
+              <h5>2024 – 2028 (Pursuing)</h5>
+              <p><em>Narula Institute of Technology, Kolkata</em></p>
+              <ul>
+                <li>Currently in 1st year with strong foundation in DSA, Web Technologies, and OOPs</li>
+                <li>Active member of Coding Club & Web Dev Community</li>
+              </ul>
+            </div>
+
+            <!-- Higher Secondary -->
+            <div class="resume-items">
+              <h4>Higher Secondary (10+2) – Science Stream</h4>
+              <h5>2022 – 2024</h5>
+              <p><em>Bhatpara Amarkrishna Pathshala, Bhatpara</em></p>
+              <p><strong>Aggregate: 77%</strong> (WBCHSE Board)</p>
+            </div>
+
+            <!-- Secondary -->
+            <div class="resume-items">
+              <h4>Secondary Education (10th)</h4>
+              <h5>2021 – 2022</h5>
+              <p><em>Bhatpara Amarkrishna Pathshala (H.S.), Bhatpara</em></p>
+              <p><strong>Aggregate: 85%</strong> (WBBSE Board)</p>
+            </div>
+
+          </div>
+
+          <!-- Experience & Projects -->
+          <div class="col-lg-6" data-aos="fade-up" data-delay="100">
+
+            <h3 class="resume-title">Professional Experience</h3>
+
+            <!-- Josh Talks Internship -->
+            <div class="resume-items">
+              <h4>Web Development Intern</h4>
+              <h5>Jun 2025 – Aug 2025</h5>
+              <p><em>Josh Talks, Remote</em></p>
+              <ul>
+                <li>Developed responsive landing pages using <strong>HTML, CSS, JavaScript, React</strong></li>
+                <li>Optimized website performance, reducing load time by <strong>30%</strong></li>
+                <li>Collaborated with design team to implement pixel-perfect UI components</li>
+                <li>Integrated APIs for dynamic speaker profiles and event scheduling</li>
+              </ul>
+            </div>
+
+            <!-- Code Ninjas Internship -->
+            <div class="resume-items">
+              <h4>Coding Instructor Intern</h4>
+              <h5>Jan 2025 – May 2025</h5>
+              <p><em>Code Ninjas, Kolkata Center</em></p>
+              <ul>
+                <li>Taught <strong>Python, JavaScript, Scratch</strong> to kids aged 7–14</li>
+                <li>Designed 10+ hands-on projects including games and animations</li>
+                <li>Mentored 25+ students in problem-solving and logical thinking</li>
+                <li>Received <strong>5-star feedback</strong> from parents and center head</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Projects & Contributions</h3>
+            <div class="resume-items">
+              <ul>
+                <li>Built 15+ full-stack web apps (Portfolio, E-commerce, Tools)</li>
+                <li>250+ problems solved on LeetCode & HackerRank</li>
+                <li>Active contributor to open-source & personal GitHub repos</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ========== End Section Resume ========== -->
+    <!-- ========== End Section Resume ========== -->
+    <!-- ========== End Section Resume ========== -->
+
+    <!-- ========== Start Section Achievements ========== -->
+    <!-- <section id="achievements" class="achievements py-5 bg-light">
+      <div class="container">
+        <div class="section-title">
+          <h2>Achievements</h2>
+          <p>
+            Recognitions, contest wins, and hackathon participations that reflect my dedication to coding,
+            problem-solving, and innovation.
+          </p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+
+          <!-- Achievement 1: Hackathon -->
+    <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-delay="100">
+      <div class="achievement-item text-center p-4 bg-white shadow-sm rounded h-100">
+        <div class="icon mb-3">
+          <i class="bi bi-trophy-fill text-warning" style="font-size: 2.5rem;"></i>
+        </div>
+        <h4>Smart India Hackathon 2025</h4>
+        <p class="text-muted">Finalist (Top 12)</p>
+        <p><strong>Team: CodeCrafters</strong><br>
+          Built a real-time attendance system using Flask + Face Recognition</p>
+        <span class="badge bg-success">Aug 2025</span>
+      </div>
+    </div> -->
+
+    <!-- Achievement 2: Coding Contest -->
+    <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-delay="200">
+      <div class="achievement-item text-center p-4 bg-white shadow-sm rounded h-100">
+        <div class="icon mb-3">
+          <i class="bi bi-code-slash text-primary" style="font-size: 2.5rem;"></i>
+        </div>
+        <h4>CodeChef Contest</h4>
+        <p class="text-muted">Rated 4-Star Coder</p>
+        <p><strong>250+ Problems Solved</strong><br>
+          Peak Rating: <strong>1620</strong> | Global Rank: <strong>Top 8%</strong></p>
+        <span class="badge bg-info text-dark">2024 – 2025</span>
+      </div>
+    </div> -->
+
+    <!-- Achievement 3: LeetCode -->
+    <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-delay="300">
+      <div class="achievement-item text-center p-4 bg-white shadow-sm rounded h-100">
+        <div class="icon mb-3">
+          <i class="bi bi-graph-up text-success" style="font-size: 2.5rem;"></i>
+        </div>
+        <h4>LeetCode Warrior</h4>
+        <p class="text-muted">Knight Rank</p>
+        <p><strong>300+ Problems</strong><br>
+          150+ Medium | 50+ Hard | Contest Rating: <strong>1750</strong></p>
+        <a href="https://leetcode.com/sufalbasak" target="_blank" class="btn btn-sm btn-outline-success mt-2">
+          View Profile
+        </a>
+      </div>
+    </div> -->
+
+    <!-- Achievement 4: College Hackathon -->
+    <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-delay="400">
+      <div class="achievement-item text-center p-4 bg-white shadow-sm rounded h-100">
+        <div class="icon mb-3">
+          <i class="bi bi-laptop text-danger" style="font-size: 2.5rem;"></i>
+        </div>
+        <h4>NIT TechFest Hackathon</h4>
+        <p class="text-muted">1st Runner-Up</p>
+        <p><strong>Project: EcoTrack</strong><br>
+          IoT-based waste management dashboard</p>
+        <span class="badge bg-danger">Feb 2025</span>
+      </div>
+    </div> -->
+
+    <!-- Achievement 5: Certification -->
+    <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-delay="500">
+      <div class="achievement-item text-center p-4 bg-white shadow-sm rounded h-100">
+        <div class="icon mb-3">
+          <i class="bi bi-patch-check-fill text-info" style="font-size: 2.5rem;"></i>
+        </div>
+        <h4>NPTEL Certification</h4>
+        <p class="text-muted">Elite + Silver</p>
+        <p><strong>Course:</strong> Problem Solving through Programming in C<br>
+          <strong>Score:</strong> 88%
+        </p>
+        <a href="certificates/nptel-c.pdf" target="_blank" class="btn btn-sm btn-outline-info mt-2">
+          View Certificate
+        </a>
+      </div>
+    </div> -->
+
+    <!-- Achievement 6: Open Source -->
+    <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-delay="600">
+      <div class="achievement-item text-center p-4 bg-white shadow-sm rounded h-100">
+        <div class="icon mb-3">
+          <i class="bi bi-git text-dark" style="font-size: 2.5rem;"></i>
+        </div>
+        <h4>Open Source Contributor</h4>
+        <p class="text-muted">GitHub</p>
+        <p><strong>50+ Commits</strong> in public repos<br>
+          Contributed to <strong>DevFest 2025</strong> website</p>
+        <a href="https://github.com/sufalbasak" target="_blank" class="btn btn-sm btn-outline-dark mt-2">
+          GitHub Profile
+        </a>
+      </div>
+    </div> 
+
+     </div>
+    </div>
+    </section> -->
+    <!-- ========== End Section Achievements ========== -->
+    <!-- ========== Start Section Portfolio ========== -->
+    <!-- ========== Start Section Portfolio ========== -->
+    <section id="portfolio" class="portfolio bg-light py-5">
+      <div class="container">
+        <div class="section-title">
+          <h2>My Projects</h2>
+          <p>
+            Explore my collection of web apps, tools, and full-stack projects. Click the buttons to view live demos and
+            source code.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="row" data-aos="fade-down">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flter" class="list-inline">
+              <li data-filter="*" class="filter-active list-inline-item mx-2">All</li>
+              <li data-filter=".filter-app" class="list-inline-item mx-2">Apps</li>
+              <li data-filter=".filter-web" class="list-inline-item mx-2">Websites</li>
+              <li data-filter=".filter-game" class="list-inline-item mx-2">Games</li>
+              <li data-filter=".filter-tool" class="list-inline-item mx-2">Tools</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="row portfolio-container" data-aos="fade-up" data-delay="100">
+
+          <!-- Original Project 1: Age Calculator -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap shadow-sm rounded overflow-hidden">
+              <img src="img/portfolio/portfolio-1.jpg" class="img-fluid" alt="Age Calculator">
+              <div class="portfolio-info p-3 bg-white">
+                <h4>Age Calculator</h4>
+                <p>HTML, CSS, JavaScript</p>
+                <div class="portfolio-links mt-3">
+                  <a href="Projects/AgeCalculator/index.html" target="_blank" class="btn btn-sm btn-primary me-2">
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/sufalbasak/AgeCalculator" target="_blank"
+                    class="btn btn-sm btn-outline-secondary">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Original Project 2: FoodBazaar -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap shadow-sm rounded overflow-hidden">
+              <img src="img/portfolio/grocerry.avif" class="img-fluid" alt="FoodBazaar">
+              <div class="portfolio-info p-3 bg-white">
+                <h4>FoodBazaar</h4>
+                <p>HTML, CSS, Bootstrap</p>
+                <div class="portfolio-links mt-3">
+                  <a href="Projects/FoodBazaar/index.html" target="_blank" class="btn btn-sm btn-primary me-2">
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/sufalbasak/FoodBazaar" target="_blank"
+                    class="btn btn-sm btn-outline-secondary">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Original Project 3: Fruit Slice Game -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-game">
+            <div class="portfolio-wrap shadow-sm rounded overflow-hidden">
+              <img src="img/portfolio/fruit slice.jpg" class="img-fluid" alt="Fruit Slice Game">
+              <div class="portfolio-info p-3 bg-white">
+                <h4>Fruit Slice Game</h4>
+                <p>jQuery, Canvas</p>
+                <div class="portfolio-links mt-3">
+                  <a href="Projects/FruitSlice Game(jQuery)/index.html" target="_blank"
+                    class="btn btn-sm btn-primary me-2">
+                    Play Now
+                  </a>
+                  <a href="https://github.com/sufalbasak/FruitSlice-Game" target="_blank"
+                    class="btn btn-sm btn-outline-secondary">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Original Project 4: Math Game -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-game">
+            <div class="portfolio-wrap shadow-sm rounded overflow-hidden">
+              <img src="img/portfolio/math.avif" class="img-fluid" alt="Math Game">
+              <div class="portfolio-info p-3 bg-white">
+                <h4>Math Game</h4>
+                <p>JavaScript, DOM</p>
+                <div class="portfolio-links mt-3">
+                  <a href="Projects/Math Game/index.html" target="_blank" class="btn btn-sm btn-primary me-2">
+                    Play Now
+                  </a>
+                  <a href="https://github.com/sufalbasak/Math-Game" target="_blank"
+                    class="btn btn-sm btn-outline-secondary">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Original Project 5: My Blog -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap shadow-sm rounded overflow-hidden">
+              <img src="img/portfolio/blog.avif" class="img-fluid" alt="My Blog">
+              <div class="portfolio-info p-3 bg-white">
+                <h4>My Blog</h4>
+                <p>HTML, CSS, JS</p>
+                <div class="portfolio-links mt-3">
+                  <a href="Projects/MyBlog/index.html" target="_blank" class="btn btn-sm btn-primary me-2">
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/sufalbasak/MyBlog" target="_blank"
+                    class="btn btn-sm btn-outline-secondary">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Original Project 6: Landing Page -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap shadow-sm rounded overflow-hidden">
+              <img src="img/portfolio/portfolio-6.jpg" class="img-fluid" alt="Landing Page">
+              <div class="portfolio-info p-3 bg-white">
+                <h4>Website Landing Page</h4>
+                <p>Bootstrap, AOS</p>
+                <div class="portfolio-links mt-3">
+                  <a href="Projects/Website Landing Page/index.html" target="_blank"
+                    class="btn btn-sm btn-primary me-2">
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/sufalbasak/Landing-Page" target="_blank"
+                    class="btn btn-sm btn-outline-secondary">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Original Project 7: Image Gallery -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap shadow-sm rounded overflow-hidden">
+              <img src="img/portfolio/portfolio-7.jpg" class="img-fluid" alt="Image Gallery">
+              <div class="portfolio-info p-3 bg-white">
+                <h4>Image Gallery Grid</h4>
+                <p>CSS Grid, Lightbox</p>
+                <div class="portfolio-links mt-3">
+                  <a href="Projects/Image Gallery Grid/index.html" target="_blank" class="btn btn-sm btn-primary me-2">
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/sufalbasak/Image-Gallery" target="_blank"
+                    class="btn btn-sm btn-outline-secondary">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Original Project 8: Vertical Timeline -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap shadow-sm rounded overflow-hidden">
+              <img src="img/portfolio/portfolio-8.jpg" class="img-fluid" alt="Vertical Timeline">
+              <div class="portfolio-info p-3 bg-white">
+                <h4>Vertical Timeline</h4>
+                <p>HTML, CSS, JS</p>
+                <div class="portfolio-links mt-3">
+                  <a href="Projects/Vertical Timeline (PM Indian)/index.html" target="_blank"
+                    class="btn btn-sm btn-primary me-2">
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/sufalbasak/Vertical-Timeline" target="_blank"
+                    class="btn btn-sm btn-outline-secondary">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Original Project 9: Course Website -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap shadow-sm rounded overflow-hidden">
+              <img src="img/portfolio/course.webp" class="img-fluid" alt="Course Website">
+              <div class="portfolio-info p-3 bg-white">
+                <h4>Course Website</h4>
+                <p>HTML, CSS, jQuery</p>
+                <div class="portfolio-links mt-3">
+                  <a href="Projects/Course Website(HTML,CSS,Bootstrap,jQuery)/index.html" target="_blank"
+                    class="btn btn-sm btn-primary me-2">
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/sufalbasak/Course-Website" target="_blank"
+                    class="btn btn-sm btn-outline-secondary">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- NEW PROJECT: Weather API -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-tool">
+            <div class="portfolio-wrap shadow-sm rounded overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                class="img-fluid" alt="Weather API App">
+              <div class="portfolio-info p-3 bg-white">
+                <h4>Weather API App</h4>
+                <p>JS, OpenWeatherMap API</p>
+                <div class="portfolio-links mt-3">
+                  <a href="Projects/WeatherApp/index.html" target="_blank" class="btn btn-sm btn-primary me-2">
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/sufalbasak/WeatherApp" target="_blank"
+                    class="btn btn-sm btn-outline-secondary">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- NEW PROJECT: Student Dashboard Backend -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap shadow-sm rounded overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                class="img-fluid" alt="Student Dashboard">
+              <div class="portfolio-info p-3 bg-white">
+                <h4>Student Dashboard</h4>
+                <p>Flask, MySQL, Admin Panel</p>
+                <div class="portfolio-links mt-3">
+                  <a href="Projects/StudentDashboard/index.html" target="_blank" class="btn btn-sm btn-primary me-2">
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/sufalbasak/Student-Dashboard" target="_blank"
+                    class="btn btn-sm btn-outline-secondary">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- NEW PROJECT: Roadmap AI -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-tool">
+            <div class="portfolio-wrap shadow-sm rounded overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                class="img-fluid" alt="Roadmap AI">
+              <div class="portfolio-info p-3 bg-white">
+                <h4>Roadmap AI</h4>
+                <p>React, OpenAI API</p>
+                <div class="portfolio-links mt-3">
+                  <a href="Projects/RoadmapAI/index.html" target="_blank" class="btn btn-sm btn-primary me-2">
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/sufalbasak/Roadmap-AI" target="_blank"
+                    class="btn btn-sm btn-outline-secondary">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- NEW PROJECT: EventManagement -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap shadow-sm rounded overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                class="img-fluid" alt="Event Management">
+              <div class="portfolio-info p-3 bg-white">
+                <h4>EventManagement</h4>
+                <p>FastAPI, React, Calendar</p>
+                <div class="portfolio-links mt-3">
+                  <a href="Projects/EventManagement/index.html" target="_blank" class="btn btn-sm btn-primary me-2">
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/sufalbasak/EventManagement" target="_blank"
+                    class="btn btn-sm btn-outline-secondary">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- NEW PROJECT: Tech Community -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap shadow-sm rounded overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                class="img-fluid" alt="Tech Community">
+              <div class="portfolio-info p-3 bg-white">
+                <h4>Tech Community</h4>
+                <p>React, Firebase, Forum</p>
+                <div class="portfolio-links mt-3">
+                  <a href="Projects/TechCommunity/index.html" target="_blank" class="btn btn-sm btn-primary me-2">
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/sufalbasak/Tech-Community" target="_blank"
+                    class="btn btn-sm btn-outline-secondary">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========== End Section Portfolio ========== -->
+    <!-- ========== End Section Portfolio ========== -->
+    <!-- ========== Start Section Services ========== -->
+    <!-- ========== Start Section Services ========== -->
+    <section id="services" class="services py-2">
+      <div class="container">
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>
+            I offer a range of tech and educational services — from building modern web applications to teaching
+            problem-solving and productivity tools.
+          </p>
+        </div>
+        <div class="row">
+
+          <!-- Web Development -->
+          <div class="col-lg-4 col-md-6 icon-box border-bottom" data-aos="fade-up">
+            <div class="icon">
+              <i class="bi bi-globe text-primary"></i>
+            </div>
+            <h4 class="title"><a href="#">Web Development</a></h4>
+            <p>
+              Build responsive, fast, and modern websites using <strong>HTML, CSS, JavaScript, React, Flask,
+                FastAPI</strong>. From landing pages to full-stack apps.
+            </p>
+          </div>
+
+          <!-- Math Tutoring -->
+          <div class="col-lg-4 col-md-6 icon-box border-bottom" data-aos="fade-up" data-delay="100">
+            <div class="icon">
+              <i class="bi bi-calculator-fill text-success"></i>
+            </div>
+            <h4 class="title"><a href="#">Math & Problem Solving Tutor</a></h4>
+            <p>
+              Expert guidance in <strong>Algebra, Calculus, DSA, Competitive Programming</strong>. Clear concepts,
+              real-world examples, and exam-ready strategies.
+            </p>
+          </div>
+
+          <!-- MS Office Training -->
+          <div class="col-lg-4 col-md-6 icon-box border-bottom" data-aos="fade-up" data-delay="200">
+            <div class="icon">
+              <i class="bi bi-file-earmark-spreadsheet text-warning"></i>
+            </div>
+            <h4 class="title"><a href="#">MS Office Mastery</a></h4>
+            <p>
+              Master <strong>Excel (Formulas, Pivot, VBA), Word, PowerPoint</strong>. Automate tasks, create reports,
+              and boost productivity.
+            </p>
+          </div>
+
+          <!-- Frontend Development -->
+          <div class="col-lg-4 col-md-6 icon-box border-bottom" data-aos="fade-up" data-delay="300">
+            <div class="icon">
+              <i class="bi bi-brush text-info"></i>
+            </div>
+            <h4 class="title"><a href="#">Frontend Design</a></h4>
+            <p>
+              Pixel-perfect, responsive UIs with <strong>Bootstrap, Tailwind, React</strong>. Clean, animated, and
+              user-friendly interfaces.
+            </p>
+          </div>
+
+          <!-- Backend & API Development -->
+          <div class="col-lg-4 col-md-6 icon-box border-bottom" data-aos="fade-up" data-delay="400">
+            <div class="icon">
+              <i class="bi bi-server text-danger"></i>
+            </div>
+            <h4 class="title"><a href="#">Backend & APIs</a></h4>
+            <p>
+              Secure, scalable APIs using <strong>Flask, FastAPI, MySQL</strong>. RESTful services, authentication, and
+              database integration.
+            </p>
+          </div>
+
+          <!-- Freelance & Project Help -->
+          <div class="col-lg-4 col-md-6 icon-box border-bottom" data-aos="fade-up" data-delay="500">
+            <div class="icon">
+              <i class="bi bi-patch-check text-primary"></i>
+            </div>
+            <h4 class="title"><a href="#">Project Assistance</a></h4>
+            <p>
+              Help with <strong>college assignments, mini-projects, debugging, deployment</strong>. From idea to live
+              app — I’ve got you covered.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ========== End Section Services ========== -->
+    <!-- ========== End Section Services ========== -->
+    <!-- ========== Start Section Testimonials ========== -->
+    <!-- ========== Start Section Testimonials ========== -->
+    <section id="testimonial" class="testimonial bg-success bg-opacity-10 py-2">
+      <div class="container">
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>
+            Feedback from students, clients, and mentors who’ve experienced my work in web development, tutoring, and
+            problem-solving.
+          </p>
+        </div>
+
+        <div class="testimonial-slider swiper" data-aos="fade-right">
+          <div class="swiper-wrapper">
+
+            <!-- Testimonial 1 - Web Dev Client -->
+            <div class="swiper-slide">
+              <div class="testimonial-items" data-aos="fade-right" data-delay="100">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-alt-left"></i>
+                  Sufal built a stunning, responsive portfolio website for my startup in just 3 days. Clean code, fast
+                  loading, and mobile-perfect. Highly recommended!
+                  <i class="bx bxs-quote-alt-right quote-alt-right"></i>
+                </p>
+                <!-- <img src="" alt="Amit Sharma" class="testimonial-img rounded-circle" /> -->
+                <h4>Amit Sharma</h4>
+                <h5>Founder, TechTrend</h5>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 - Math Student -->
+            <div class="swiper-slide">
+              <div class="testimonial-items" data-aos="fade-right" data-delay="200">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-alt-left"></i>
+                  Thanks to Sufal’s clear explanations and practice problems, I went from failing DSA to scoring 85% in
+                  my semester. Best tutor ever!
+                  <i class="bx bxs-quote-alt-right quote-alt-right"></i>
+                </p>
+                <!-- <img src="" alt="Priya Singh" class="testimonial-img rounded-circle" /> -->
+                <h4>Priya Singh</h4>
+                <h5>B.Tech CSE Student</h5>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 - MS Office Trainee -->
+            <div class="swiper-slide">
+              <div class="testimonial-items" data-aos="fade-right" data-delay="300">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-alt-left"></i>
+                  Learned Excel VBA in 2 weeks! Sufal’s step-by-step approach helped me automate my monthly reports.
+                  Saved me 10+ hours/week.
+                  <i class="bx bxs-quote-alt-right quote-alt-right"></i>
+                </p>
+                <!-- <img src="" alt="Rohan Das" class="testimonial-img rounded-circle" /> -->
+                <h4>Rohan Das</h4>
+                <h5>Business Analyst</h5>
+              </div>
+            </div>
+
+            <!-- Testimonial 4 - Project Mentor -->
+            <div class="swiper-slide">
+              <div class="testimonial-items" data-aos="fade-right" data-delay="400">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-alt-left"></i>
+                  Sufal is proactive, skilled in React & FastAPI, and delivers clean, documented code. A pleasure to
+                  mentor — future full-stack star!
+                  <i class="bx bxs-quote-alt-right quote-alt-right"></i>
+                </p>
+                <!-- <img src="" alt="Prof. Neha Gupta" class="testimonial-img rounded-circle" /> -->
+                <h4>Prof. Neha Gupta</h4>
+                <h5>Asst. Professor, CSE Dept.</h5>
+              </div>
+            </div>
+
+            <!-- Testimonial 5 - Competitive Programming Peer -->
+            <div class="swiper-slide">
+              <div class="testimonial-items" data-aos="fade-right" data-delay="500">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-alt-left"></i>
+                  Solved 250+ LeetCode problems with Sufal’s study group. His tips on time complexity and Python tricks
+                  improved my ranking from 3-star to 4-star!
+                  <i class="bx bxs-quote-alt-right quote-alt-right"></i>
+                </p>
+                <!-- <img src="" alt="Vikram Roy" class="testimonial-img rounded-circle" /> -->
+                <h4>Vikram Roy</h4>
+                <h5>CodeChef 4-Star Coder</h5>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== End Section Testimonials ========== -->
+    <!-- ========== End Section Testimonials ========== -->
+    <!-- ========== Start Section Contact ========== -->
+    <!-- ========== Start Section Contact ========== -->
+    <section id="contact" class="contact py-2">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Let’s connect! Whether it's a project, internship, tutoring, or collaboration — I’m just a message away.
+          </p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+
+          <!-- Contact Info -->
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Athpur, North 24 Parganas<br>West Bengal, India - 743128</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p><a href="mailto:sufalbasak2003@gmail.com" class="text-decoration-none">sufalbasak199@gmail.com</a>
+                </p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call / WhatsApp:</h4>
+                <p><a href="tel:+919050604012" class="text-decoration-none">+91 8100402929</a></p>
+              </div>
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.843682693411!2d88.374889614959!3d22.833389985022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89b0c00000001%3A0x9f3e3f3e3f3e3f3e!2sShyamnagar%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1695143719940!5m2!1sen!2sin"
+                width="100%" height="290" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" title="Sufal Basak Location"
+                class="shadow-sm mt-3"></iframe>
+
+            </div>
+          </div>
+
+          <!-- Contact Form (Your Design) -->
+          <div class="col-lg-7 d-flex align-items-stretch">
+            <form id="form" class="w-100">
+              <!-- Intro -->
+              <div class="intro text-center mb-4">
+                <h2>Hii, I am <span style="color:#0d6efd;">Sufal Basak</span></h2>
+                <p>Message me freely</p>
+                <hr class="w-50 mx-auto" style="border-top:2px solid #0d6efd;">
+              </div>
+
+              <div class="field mb-3">
+                <label for="subject" class="form-label">subject</label>
+                <input type="text" name="subject" id="subject" class="form-control" required>
+              </div>
+
+              <div class="field mb-3">
+                <label for="name" class="form-label">name</label>
+                <input type="text" name="name" id="name" class="form-control" required>
+              </div>
+
+              <div class="field mb-3">
+                <label for="email" class="form-label">email</label>
+                <input type="email" name="email" id="email" class="form-control" required>
+              </div>
+
+              <div class="field mb-4">
+                <label for="message" class="form-label">message</label>
+                <textarea name="message" id="message" class="form-control" rows="5" required></textarea>
+              </div>
+
+              <div class="text-center">
+                <input type="submit" id="button" value="Send Email" class="btn btn-primary px-5">
+                <div id="status" class="mt-3"></div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ========== End Section Contact ========== -->
+
+    <!-- EmailJS SDK + Final JS (Auto Email) -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      // Initialize EmailJS
+      emailjs.init('dpKivfxVXzZ993M_b');
+
+      const btn = document.getElementById('button');
+      const form = document.getElementById('form');
+      const statusDiv = document.getElementById('status');
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        btn.value = 'Sending...';
+        statusDiv.innerHTML = '';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_5qlo1ln';
+
+        emailjs.sendForm(serviceID, templateID, this)
+          .then(() => {
+            btn.value = 'Send Email';
+            statusDiv.innerHTML = '<p class="text-success"><i class="bi bi-check-circle-fill"></i> Sent! I’ll reply soon.</p>';
+            form.reset();
+          }, (err) => {
+            btn.value = 'Send Email';
+            statusDiv.innerHTML = '<p class="text-danger">Failed. Try again or email me directly.</p>';
+            console.error('EmailJS Error:', err);
+          });
+      });
+    </script>
+
+    <!-- Optional: Keep script.js if needed (can be empty) -->
+    <script src="script.js"></script>
+    <!-- ========== End Section Contact ========== -->
+  </main>
+  <!-- ========== End Main Area ========== -->
+  <!-- ========== Start Section Footer ========== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="text-center fw-bold">
+        <p>&copy; 2025</p>
+        <p>Sufal Basak</p>
+      </div>
+    </div>
+  </footer>
+  <!-- ========== End Section Footer ========== -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center" title="Back To Top">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+  <!-- vender JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.2.0/swiper-bundle.min.js"></script>
+  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="js/code.js"></script>
+  <script>
+    let typed = new Typed("#typed", {
+      strings: ["Full Stack Developer", "Python Expert", "AI Enthusiast", "Problem Solver"],
+      typeSpeed: 100,
+      loop: true,
+      backSpeed: 50,
+      backDelay: 2000,
+    });
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false,
+    });
+  </script>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
